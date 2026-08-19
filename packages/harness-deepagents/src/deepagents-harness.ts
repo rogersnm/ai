@@ -17,6 +17,7 @@ import {
   type HarnessV1Session,
   type HarnessV1Skill,
   type HarnessV1StreamPart,
+  harnessV1StateDirectory,
 } from '@ai-sdk/harness';
 import {
   markBridgeStarting,
@@ -257,10 +258,17 @@ export function createDeepAgents(
       } else {
         warnCredentialBrokeringUnavailable();
       }
-      const bootstrapDir = posix.resolve(
+      // Harness SDK state (bootstrap, per-session runs) lives in the
+      // provider's state directory, which is the working directory unless the
+      // provider separates the two to keep the workspace clean.
+      const stateDir = harnessV1StateDirectory({
+        stateDirectory:
+          'stateDirectory' in sandboxSession
+            ? sandboxSession.stateDirectory
+            : undefined,
         defaultWorkingDirectory,
-        BOOTSTRAP_DIR,
-      );
+      });
+      const bootstrapDir = posix.resolve(stateDir, BOOTSTRAP_DIR);
 
       const lifecycleState = startOpts.continueFrom ?? startOpts.resumeFrom;
       const isResume = lifecycleState != null;
@@ -271,7 +279,7 @@ export function createDeepAgents(
           : undefined;
 
       const workDir = startOpts.sessionWorkDir;
-      const sessionDataDir = `${defaultWorkingDirectory}/.agent-runs/${startOpts.sessionId}`;
+      const sessionDataDir = `${stateDir}/.agent-runs/${startOpts.sessionId}`;
       const bridgeStateDir = `${sessionDataDir}/bridge`;
       const timeoutMs = settings.startupTimeoutMs ?? 120_000;
 
