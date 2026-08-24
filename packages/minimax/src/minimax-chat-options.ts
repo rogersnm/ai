@@ -20,8 +20,7 @@ export const minimaxLanguageModelOptions = z.object({
     .optional(),
 
   /**
-   * Request admission tier, sent as `service_tier`. `priority` ensures
-   * priority admission at 1.5x the standard price; defaults to `standard`.
+   * Request admission tier, sent as `service_tier`; defaults to `standard`.
    *
    * Parsed by the underlying Anthropic-compatible language model; declared
    * here for typed `providerOptions.minimax` usage.
