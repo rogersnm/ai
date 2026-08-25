@@ -1,5 +1,11 @@
 # ai
 
+## 6.0.267
+
+### Patch Changes
+
+- e88c835: Expose structured output parsing diagnostics from `generateText` when generation stops because of the output token limit.
+
 ## 6.0.266
 
 ### Patch Changes
