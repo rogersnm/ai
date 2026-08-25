@@ -1,5 +1,11 @@
 # @ai-sdk/xai
 
+## 4.0.45
+
+### Patch Changes
+
+- 7de3612: Encode provider-returned identifiers before using them in credentialed follow-up request paths.
+
 ## 4.0.44
 
 ### Patch Changes

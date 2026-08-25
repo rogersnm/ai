@@ -1,5 +1,12 @@
 # @ai-sdk/harness
 
+## 1.0.88
+
+### Patch Changes
+
+- Updated dependencies [eed7950]
+  - ai@7.0.80
+
 ## 1.0.87
 
 ### Patch Changes

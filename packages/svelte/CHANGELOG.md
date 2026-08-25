@@ -1,5 +1,12 @@
 # @ai-sdk/svelte
 
+## 5.0.80
+
+### Patch Changes
+
+- Updated dependencies [eed7950]
+  - ai@7.0.80
+
 ## 5.0.79
 
 ### Patch Changes

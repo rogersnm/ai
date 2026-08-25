@@ -1,5 +1,13 @@
 # @ai-sdk/workflow
 
+## 2.0.10
+
+### Patch Changes
+
+- e21bde7: Preserve function tool input examples and provider options across workflow step boundaries.
+- Updated dependencies [eed7950]
+  - ai@7.0.80
+
 ## 2.0.9
 
 ### Patch Changes

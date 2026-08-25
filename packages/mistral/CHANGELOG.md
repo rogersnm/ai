@@ -1,5 +1,11 @@
 # @ai-sdk/mistral
 
+## 4.0.34
+
+### Patch Changes
+
+- ff35434: Add the `promptCacheKey` chat provider option for Mistral prompt cache affinity.
+
 ## 4.0.33
 
 ### Patch Changes

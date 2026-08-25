@@ -1,5 +1,13 @@
 # ai
 
+## 7.0.80
+
+### Patch Changes
+
+- eed7950: Expose structured output parsing diagnostics from `generateText` when generation stops because of the output token limit.
+- Updated dependencies [5533946]
+  - @ai-sdk/gateway@4.0.65
+
 ## 7.0.79
 
 ### Patch Changes

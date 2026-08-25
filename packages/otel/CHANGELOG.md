@@ -1,5 +1,13 @@
 # @ai-sdk/otel
 
+## 1.0.80
+
+### Patch Changes
+
+- 0651c5f: Include configured runtime context attributes on legacy tool call spans.
+- Updated dependencies [eed7950]
+  - ai@7.0.80
+
 ## 1.0.79
 
 ### Patch Changes

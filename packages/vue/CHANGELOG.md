@@ -1,5 +1,12 @@
 # @ai-sdk/vue
 
+## 4.0.80
+
+### Patch Changes
+
+- Updated dependencies [eed7950]
+  - ai@7.0.80
+
 ## 4.0.79
 
 ### Patch Changes

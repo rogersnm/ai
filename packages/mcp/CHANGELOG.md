@@ -1,5 +1,11 @@
 # @ai-sdk/mcp
 
+## 2.0.38
+
+### Patch Changes
+
+- fe69342: fix(mcp): reject private OAuth endpoints before sending credentials
+
 ## 2.0.37
 
 ### Patch Changes

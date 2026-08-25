@@ -1,5 +1,12 @@
 # @ai-sdk/code-mode
 
+## 1.0.37
+
+### Patch Changes
+
+- Updated dependencies [eed7950]
+  - ai@7.0.80
+
 ## 1.0.36
 
 ### Patch Changes

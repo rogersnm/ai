@@ -1,5 +1,12 @@
 # @ai-sdk/google
 
+## 4.0.52
+
+### Patch Changes
+
+- 7de3612: Encode provider-returned identifiers before using them in credentialed follow-up request paths.
+- 92e08e6: Preserve recursive tool input schemas without aborting Google model calls.
+
 ## 4.0.51
 
 ### Patch Changes

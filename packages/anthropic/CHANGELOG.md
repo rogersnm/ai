@@ -1,5 +1,11 @@
 # @ai-sdk/anthropic
 
+## 4.0.43
+
+### Patch Changes
+
+- 7de3612: Encode provider-returned identifiers before using them in credentialed follow-up request paths.
+
 ## 4.0.42
 
 ### Patch Changes

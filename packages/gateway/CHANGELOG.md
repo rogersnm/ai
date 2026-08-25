@@ -1,5 +1,14 @@
 # @ai-sdk/gateway
 
+## 4.0.65
+
+### Patch Changes
+
+- 5533946: Remove the internal-only `relevance_score` and `citation_number` fields from
+  published Tako Search response types and schemas. Code that reads either field
+  must be updated; Gateway responses still pass the values through at runtime,
+  but they are no longer typed. Also document data surcharge controls.
+
 ## 4.0.64
 
 ### Patch Changes
